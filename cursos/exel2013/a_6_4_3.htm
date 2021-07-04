@@ -1,0 +1,234 @@
+<!--?xml version="1.0" encoding="iso-8859-1"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>  5 - Avanzado: Funciones financieras</title>
+  <script async="" src="a_6_4_3_files/cbgapi.loaded_1"></script><script src="a_6_4_3_files/ca-pub-1875034419890743.js" type="text/javascript" async=""></script><script async="" src="a_6_4_3_files/cbgapi.loaded_0"></script><script type="text/javascript">
+		var previous = "t_6_4.htm#a3";
+		var home     = "t_6_4.htm#a3";
+		var next     = "a_6_4_4.htm";
+		
+	</script>
+   <script type="text/javascript" src="a_6_4_3_files/todo.js"></script><script src="a_6_4_3_files/navegacion.js" type="text/javascript"></script><link href="a_6_4_3_files/Menu.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="a_6_4_3_files/domMenu_min.js"></script>
+  <script type="text/javascript" src="a_6_4_3_files/domMenu_comun.js"></script>
+  <script type="text/javascript" src="a_6_4_3_files/domMenu_items.js"></script>
+
+  <link href="a_6_4_3_files/estilo_aulaclic.css" rel="stylesheet" type="text/css" title="aulaClic">
+  <meta name="description" content="Curso de Excel 2013 de aulaClic. Gratis">
+    <meta name="keywords" content="microsoft excel 2010 www celdas hojas calculo oficina ofimatica tablas graficos estilos  curso tutorial manual enseñanza educacion ">
+  
+  <!-- Añade esta etiqueta en la cabecera o delante de la etiqueta body. -->
+<script gapi_processed="true" type="text/javascript" src="a_6_4_3_files/plusone.js">
+  {lang: 'es'}
+</script>
+
+</head>
+
+<body data-twttr-rendered="true">
+
+<div style="height: 582px;" id="contenedor" class="avanzado">
+<div style="width: 1346px;" id="principal">
+<div style="width: 1181px;" id="texto_pagina">
+
+   <h1>Unidad 5. Avanzado: Funciones financieras (I)</h1>
+
+<br>
+ 
+
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  AMORTIZ.LIN(costo; fecha_compra; primer_período; costo_residual; período; tasa; [base])</span></p>
+<p>Devuelve la amortización de un período. La base es opcional.</p>
+<p>Ejemplo: <span class="opciones">=AMORTIZ.LIN(2400;"17/08/2010";"14/11/2010";250;1;14%;4)</span></p>
+<p>&nbsp;</p>
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  AMORTIZ.PROGRE(costo; fecha_compra; primer_período; costo_residual; período; tasa; [base])</span></p>
+<p>Devuelve la amortización de un período. Es similar a la anterior pero
+ adaptada al sistema contable francés que tiene en cuenta la vida del 
+bien.</p>
+<p>&nbsp;</p>
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  CUPON.DIAS(liquidación; vencimiento; frecuencia; [base])</span></p>
+<p>Devuelve el número de días del período (entre dos cupones) donde se    encuentra la fecha de liquidación.</p>
+<p>La frecuencia se indica de la siguiente forma:</p>
+<p>1 --&gt; Para pagos anuales.</p>
+<p>2 --&gt; Para pagos semestrales.</p>
+<p>4 --&gt; Para pagos trimestrales.</p>
+<p>Por ejemplo: <span class="opciones">=CUPON.DIAS(FECHA(2010;1;1);FECHA(2010;12;31);4)</span></p>
+<p>&nbsp;</p>
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  CUPON.DIAS.L1(liquidación; vencimiento; frecuencia; [base])</span></p>
+<p>Devuelve el número de días desde el principio del período de un cupón    hasta la fecha de liquidación.</p>
+<p>&nbsp;</p>
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  CUPON.DIAS.L2(liquidación; vencimiento; frecuencia; [base])</span></p>
+<p>Devuelve el número de días desde la fecha de liquidación hasta la fecha    del próximo cupón.</p>
+<p>&nbsp;</p>
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  CUPON.FECHA.L1(liquidación; vencimiento; frecuencia; [base])</span></p>
+<p>Devuelve la fecha de cupón anterior a la fecha de liquidación.</p>
+<p>&nbsp;</p>
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  CUPON.FECHA.L2(liquidación; vencimiento; frecuencia; [base])</span></p>
+<p>Devuelve la fecha del próximo cupón después de la fecha de liquidación.</p>
+<p>&nbsp;</p>
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  CUPON.NUM(liquidación; vencimiento; frecuencia; [base])</span></p>
+<p>Devuelve el número de pagos de cupón entre la fecha de liquidación y la    fecha de vencimiento.</p>
+<p>&nbsp;</p>
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  DB(costo; valor_residual; vida; periodo; mes)</span></p>
+
+<p>Devuelve la depreciación de un bien para un 
+
+  período especificado, usando el método de depreciación 
+
+de saldo fijo. </p>
+
+<blockquote>
+
+  <p><strong class="Estilo4">Costo</strong> = es el valor 
+
+    inicial del bien.</p>
+
+  <p><span class="Estilo4"><strong>Valor_residual</strong></span><strong> = </strong> es el valor al final de la depreciación del bien. </p>
+
+  <p><strong class="Estilo4">Vida</strong> = es el número de periodos durante el cual se deprecia el bien (también conocido como vida útil) </p>
+
+  <p><span class="Estilo4"><strong>Periodo</strong></span><strong> = </strong> es el periodo para el que se desea calcular la depreciación. </p>
+
+  <p><strong class="Estilo4">Mes</strong> = es el número de meses del primer año. Si no se especifica, se asume que es 12.</p>
+
+</blockquote>
+
+<p><span class="resaltado">Ejemplo</span>:</p>
+
+<p>Hemos comprado un coche que vale 20.000 € y suponemos que a los 5 
+años su valor puede estar por 9.000 €. Queremos saber cuál es su 
+depreciación a los 6 meses de haberlo adquirido. </p>
+
+<p>Si introducimos estos datos <span class="opciones">DB</span>(20000;9000;5;1;6), nos debe dar como resultado 1.480 €, es decir, a los seis meses de su compra el coche  vale 18.520 €. </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+DDB(costo; valor_residual; vida; periodo; factor)</span></p>
+
+<p>Devuelve la depreciación de un bien para un 
+
+  período especificado, mediante el método de depreciación 
+
+por doble disminución de saldo u otro método que se especifique. </p>
+
+<p>El método de depreciación por doble disminución del saldo calcula la 
+depreciación a una tasa acelerada. La depreciación es más alta durante 
+el primer período y disminuye en períodos sucesivos. </p>
+
+<blockquote>
+
+  <p><strong class="Estilo4">Costo</strong> = es el valor 
+
+    inicial del bien.</p>
+
+  <p><strong class="Estilo4">Valor_residual</strong> = 
+
+    es el valor al final de la depreciación del bien. </p>
+
+  <p><strong class="Estilo4">Periodo</strong> = es el periodo para el que se desea calcular la depreciación.</p>
+
+  <p><strong class="Estilo4">Factor</strong> = es la tasa a la que 
+disminuye el saldo. Si factor se omite, se supondrá que es 2 ( el método
+ de depreciación por doble disminución del saldo) </p>
+
+</blockquote>
+
+<p><span class="resaltado">Ejemplo</span>:</p>
+
+<p>Sigamos con el ejemplo del coche.</p>
+
+<p>Por tanto, si introducimos los datos <span class="opciones">DDB</span>(20000;9000;5;1), nos debe dar como resultado 8.000 €, es decir, en el primer año de su compra el coche vale 12.000€. </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_4_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+DVS(costo; valor_residual; vida; periodo_inicial; periodo_final; [factor]; [sin_cambios])</span></p>
+
+<p>Devuelve la depreciación de un bien para un 
+
+  período especificado, incluyendo periodos parciales, usando el 
+
+  método de amortización acelerada, con una tasa doble y según 
+
+el coeficiente que especifique. </p>
+
+<p>Las iniciales DVS corresponden a Disminución 
+
+Variable del Saldo. </p>
+
+<blockquote>
+
+  <p><span class="Estilo4"><strong>Costo</strong></span><strong> =</strong> es el costo inicial del bien.</p>
+
+  <p><strong class="Estilo4">Valor_residual</strong> = es el valor final de la depreciación del  bien.</p>
+
+  <p><strong class="Estilo4">Vida</strong> = vida útil del bien.</p>
+
+  <p><strong class="Estilo4">Periodo_inicial</strong> = es el periodo inicial para el que se desea calcular la amortización.</p>
+
+  <p><strong class="Estilo4">Periodo_final</strong> = es el periodo final para el que se desea calcular la amortización.</p>
+
+  <p><strong class="Estilo4">Factor</strong> = es la tasa a la que 
+disminuye el saldo. Si el argumento factor se omite, se calculará como 2
+ ( el método de amortización con una tasa doble de disminución del 
+saldo) </p>
+
+  <p><strong class="Estilo4">Sin_cambios</strong> = es un valor lógico 
+que especifica si deberá cambiar el método directo de depreciación 
+cuando la depreciación sea mayor que el cálculo del saldo. </p>
+
+</blockquote>
+
+<p>Si el argumento sin_cambios es VERDADERO, no cambia al método directo
+ de depreciación aun cuando ésta sea mayor que el cálculo del saldo en 
+disminución. </p>
+
+<p>Si el argumento sin_cambios es FALSO o se omite, cambia al método 
+directo de depreciación cuando la depreciación es mayor que el cálculo 
+del saldo en disminución. </p>
+
+<p><span class="resaltado">Ejemplo</span>:</p>
+
+<p>Si introducimos los datos <span class="opciones">DVS</span>(5000;500;5*12;0;1), 
+
+  nos debe dar como resultado 166,67 €, es decir, al primer mes de su 
+
+  compra el objeto vale 4833,33 € (166,67€ menos que cuando se 
+
+compró). </p>
+<p>&nbsp;</p>
+
+
+
+
+<div id="pie">
+    
+    <p id="flechas" style="clear:both">
+		&nbsp;&nbsp;&nbsp;<a href=" t_6_4.htm#a3"><img src="a_6_4_3_files/flecha_arriba.gif" alt="Inicio" title="Inicio"></a>&nbsp;
+<a href=" a_6_4_4.htm"><img src="a_6_4_3_files/flecha_av.gif" alt="Adelante" title="Página siguiente"></a>
+        <br>
+    </p>
+    
+ 
+
+<iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="a_6_4_3_files/postmessageRelay.htm" id="oauth2relay1516284105" name="oauth2relay1516284105"></iframe></body></html>

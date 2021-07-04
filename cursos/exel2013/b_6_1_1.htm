@@ -1,0 +1,232 @@
+<!--?xml version="1.0" encoding="iso-8859-1"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>  5 - Básico: Operadores más utilizados en las fórmulas o funciones</title>
+  <script async="" src="b_6_1_1_files/cbgapi.loaded_1"></script><script src="b_6_1_1_files/ca-pub-1875034419890743.js" type="text/javascript" async=""></script><script async="" src="b_6_1_1_files/cbgapi.loaded_0"></script><script type="text/javascript">
+		var previous = "t_6_1.htm#b1";
+		var home     = "t_6_1.htm#b1";
+		var next     = "t_6_1.htm#b1";
+		
+	</script>
+   <script type="text/javascript" src="b_6_1_1_files/todo.js"></script><script src="b_6_1_1_files/navegacion.js" type="text/javascript"></script><link href="b_6_1_1_files/Menu.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="b_6_1_1_files/domMenu_min.js"></script>
+  <script type="text/javascript" src="b_6_1_1_files/domMenu_comun.js"></script>
+  <script type="text/javascript" src="b_6_1_1_files/domMenu_items.js"></script>
+
+  <link href="b_6_1_1_files/estilo_aulaclic.css" rel="stylesheet" type="text/css" title="aulaClic">
+  <meta name="description" content="Curso de Excel 2013 de aulaClic. Gratis">
+    <meta name="keywords" content="microsoft excel 2010 www celdas hojas calculo oficina ofimatica tablas graficos estilos  curso tutorial manual enseñanza educacion ">
+  
+  <!-- Añade esta etiqueta en la cabecera o delante de la etiqueta body. -->
+<script gapi_processed="true" type="text/javascript" src="b_6_1_1_files/plusone.js">
+  {lang: 'es'}
+</script>
+
+</head>
+
+<body data-twttr-rendered="true">
+
+
+<div style="height: 582px;" id="contenedor" class="basico">
+<div style="width: 1346px;" id="principal">
+<div style="width: 1181px;" id="texto_pagina">
+
+   <h1>Unidad 5. Básico: Operadores más utilizados en las fórmulas o funciones</h1>
+
+<br>
+
+ 
+
+	 
+
+		
+
+	
+
+
+
+
+
+<p>Excel permite que en una función 
+
+  tengamos varios operadores para tratar los datos. Los operadores son 
+símbolos que identifica Excel con operaciones aritméticas y es el enlace
+ entre dos argumentos. </p>
+
+<p>En la tabla podemos ver los operadores más utilizados.</p>
+<table class="info" style="width:300px;">
+  <tbody><tr>
+    <th>SIGNO </th>
+    <th>OPERACIÓN QUE REALIZA </th>
+  </tr>
+  <tr>
+    <td> + </td>
+    <td> SUMA </td>
+  </tr>
+  <tr>
+    <td> - </td>
+    <td> RESTA </td>
+  </tr>
+  <tr>
+    <td> * </td>
+    <td> MULTIPLICA </td>
+  </tr>
+  <tr>
+    <td> / </td>
+    <td> DIVIDE </td>
+  </tr>
+  <tr>
+    <td> ^</td>
+    <td>EXPONENCIACIÓN</td>
+  </tr>
+  <tr>
+    <td>&amp; </td>
+    <td> UNIÓN / CONCATENAR </td>
+  </tr>
+  <tr>
+    <td> = </td>
+    <td> Comparación IGUAL QUE </td>
+  </tr>
+  <tr>
+    <td>&gt; </td>
+    <td> Comparación MAYOR QUE </td>
+  </tr>
+  <tr>
+    <td>&lt; </td>
+    <td> Comparación MENOR QUE </td>
+  </tr>
+  <tr>
+    <td>&gt;= </td>
+    <td> Comparación MAYOR IGUAL QUE </td>
+  </tr>
+  <tr>
+    <td>&lt;= </td>
+    <td> Comparación MENOR IGUAL QUE </td>
+  </tr>
+  <tr>
+    <td>&lt;&gt;</td>
+    <td>Comparación DISTINTO </td>
+  </tr>
+</tbody></table>
+<p>En una fórmula o función pueden utilizarse tanto operadores como sea 
+necesario teniendo en cuenta siempre que los operadores hacen siempre 
+referencia a dos argumentos. Pueden crearse fórmulas verdaderamente 
+complejas. Veamos un ejemplo.</p>
+
+<blockquote>
+
+  <p class="valores">= ((SUMA(A1:A7)*SUMA(B1:B7)) / (SUMA(C1:C7)*SUMA(D1:D7)))=(F8*SUMA(G1:G5))</p>
+
+</blockquote>
+<h1>Precedencia de los operadores </h1>
+
+<br>
+
+<p>Hemos visto que una fórmula puede ser muy compleja, utilizando 
+multitud de operadores. Excel, como cualquier operador matemático, tiene
+ unas ciertas reglas para saber qué operaciones debe realizar primero 
+para que el resultado obtenido sea el correcto.</p>
+
+<p>En la siguiente tabla mostramos las precedencias establecidas por Excel.</p>
+<table class="info">
+  <tbody><tr>
+    <th>SIGNO </th>
+    <th>OPERACIÓN QUE REALIZA </th>
+    <th>PRECEDENCIA</th>
+  </tr>
+  <tr>
+    <td> ^</td>
+    <td>EXPONENCIACIÓN</td>
+    <td>1 </td>
+  </tr>
+  <tr>
+    <td> * </td>
+    <td> MULTIPLICA </td>
+    <td>2 </td>
+  </tr>
+  <tr>
+    <td> / </td>
+    <td> DIVIDE </td>
+    <td>2 </td>
+  </tr>
+  <tr>
+    <td> + </td>
+    <td> SUMA </td>
+    <td>3 </td>
+  </tr>
+  <tr>
+    <td> - </td>
+    <td> RESTA </td>
+    <td>3 </td>
+  </tr>
+  <tr>
+    <td>&amp; </td>
+    <td> UNIÓN / CONCATENAR </td>
+    <td>4 </td>
+  </tr>
+  <tr>
+    <td> = </td>
+    <td> Comparación IGUAL QUE </td>
+    <td>5 </td>
+  </tr>
+  <tr>
+    <td>&gt; </td>
+    <td> Comparación MAYOR QUE </td>
+    <td>5 </td>
+  </tr>
+  <tr>
+    <td>&lt; </td>
+    <td> Comparación MENOR QUE </td>
+    <td>5 </td>
+  </tr>
+  <tr>
+    <td>&gt;= </td>
+    <td> Comparación MAYOR IGUAL QUE </td>
+    <td>5 </td>
+  </tr>
+  <tr>
+    <td>&lt;= </td>
+    <td> Comparación MENOR IGUAL QUE </td>
+    <td>5 </td>
+  </tr>
+  <tr>
+    <td>&lt;&gt;</td>
+    <td>Comparación DISTINTO </td>
+    <td>5 </td>
+  </tr>
+</tbody></table>
+<p>Además de esta tabla de precedencias, la precedencia máxima, es 
+decir, la operación que antes se evalúa, es aquella que va entre 
+paréntesis.</p>
+
+<p>Veamos pues cómo resolvería la fórmula que hemos visto como ejemplo:</p>
+<p class="valores">= ((SUMA(A1:A7)*SUMA(B1:B7)) / (SUMA(C1:C7)*SUMA(D1:D7)))=(F8*SUMA(G1:G5))</p>
+<p>Podemos ver que hay 10 operaciones </p>
+
+<blockquote>
+
+  <p>- 5 SUMAS</p>
+
+  <p>- 3 MULTIPLICACIONES</p>
+
+  <p>- 1 DIVISIÓN</p>
+
+  <p>- 1 COMPARACIÓN </p>
+
+</blockquote>
+
+<p>Primero resolvería por separado las operaciones de <strong>SUMA</strong>, despues realizaría las operaciones de<strong> MULTIPLICACIÓN</strong>, seguidamente realizaría la <strong>DIVISIÓN</strong> y, por último, la <strong>COMPARACIÓN.</strong></p>
+
+
+
+
+<div id="pie">
+    
+    <p id="flechas" style="clear:both">
+		&nbsp;&nbsp;&nbsp;<a href=" t_6_1.htm#b1"><img src="b_6_1_1_files/flecha_arriba.gif" alt="Inicio" title="Inicio"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>
+    </p>
+    
+
+<iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="b_6_1_1_files/postmessageRelay.htm" id="oauth2relay583459935" name="oauth2relay583459935"></iframe></body></html>

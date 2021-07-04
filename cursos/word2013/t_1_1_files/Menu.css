@@ -1,0 +1,41 @@
+
+div.domMenu_menuBar {
+    border: 0;  
+    border-width: 1px 0 0 1px;
+	position:absolute; left:160px; top:25px;
+	width:230px; height:35px;
+	z-index:2;
+}
+
+div.domMenu_menuElement {
+    font-family: Arial, sans-serif; 
+    font-size: 12px;
+    color: #0F0F0F;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+}
+
+div.domMenu_subMenuElement {
+    font-family: Arial, sans-serif; 
+    font-size: 12px;
+    margin: 0 1px;
+	padding: 0px 7px;	
+	color: #800000;
+	background-color: #f9e8c5;
+    text-align:left;
+    height: 25px;
+	width:230px;
+    line-height: 25px;
+	font-weight:bold;
+}
+div.domMenu_subMenuElementHover {
+	color: #f9e8c5;
+	background-color: #800000;
+}   
+div.domMenu_subMenuElementHover span.basico {color: #f9e8c5;}
+span.basico {color: #006600;}
+div.domMenu_subMenuElementHover span.avanzado {color: #f9e8c5;}
+span.avanzado {color: #000080;}
+
+#domMenu_main-2-18-0 {top:234px !important;}

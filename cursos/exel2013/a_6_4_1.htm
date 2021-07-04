@@ -1,0 +1,186 @@
+<!--?xml version="1.0" encoding="iso-8859-1"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>  5 - Avanzado: Funciones que buscan un valor</title>
+  <script async="" src="a_6_4_1_files/cbgapi.loaded_1"></script><script src="a_6_4_1_files/ca-pub-1875034419890743.js" type="text/javascript" async=""></script><script async="" src="a_6_4_1_files/cbgapi.loaded_0"></script><script type="text/javascript">
+		var previous = "t_6_4.htm#a1";
+		var home     = "t_6_4.htm#a1";
+		var next     = "a_6_4_2.htm";
+		
+	</script>
+   <script type="text/javascript" src="a_6_4_1_files/todo.js"></script><script src="a_6_4_1_files/navegacion.js" type="text/javascript"></script><link href="a_6_4_1_files/Menu.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="a_6_4_1_files/domMenu_min.js"></script>
+  <script type="text/javascript" src="a_6_4_1_files/domMenu_comun.js"></script>
+  <script type="text/javascript" src="a_6_4_1_files/domMenu_items.js"></script>
+
+  <link href="a_6_4_1_files/estilo_aulaclic.css" rel="stylesheet" type="text/css" title="aulaClic">
+  <meta name="description" content="Curso de Excel 2013 de aulaClic. Gratis">
+    <meta name="keywords" content="microsoft excel 2010 www celdas hojas calculo oficina ofimatica tablas graficos estilos  curso tutorial manual enseñanza educacion ">
+  
+  <!-- Añade esta etiqueta en la cabecera o delante de la etiqueta body. -->
+<script gapi_processed="true" type="text/javascript" src="a_6_4_1_files/plusone.js">
+  {lang: 'es'}
+</script>
+
+</head>
+
+<body data-twttr-rendered="true">
+
+
+<div style="height: 582px;" id="contenedor" class="avanzado">
+<div style="width: 1346px;" id="principal">
+<div style="width: 1181px;" id="texto_pagina">
+
+   <h1>Unidad 5. Avanzado: Funciones que buscan un valor (I)</h1>
+
+<br>
+ 
+<p><span class="resaltado"><img src="a_6_4_1_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+  AREAS(ref)</span></p>
+
+<p>Devuelve el número de rangos de celdas contiguas 
+
+o celdas únicas de una referencia. </p>
+
+<p>Ejemplo: <span class="opciones">=AREAS(A1) </span>devuelve 1 pues únicamente hay un área.  </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_4_1_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+BUSCAR(...)</span></p>
+
+<p>Esta función busca un valor en un rango de 
+
+  una columna o una fila o una matriz. Debes indicar el valor a buscar, 
+
+  dónde quieres que busque y de dónde obtendrás el 
+
+resultado. </p>
+
+<p>Ejemplo: Tenemos en 
+
+  la <strong>columna B</strong> una lista de nombres de amig@s y en la <strong>columna 
+
+    C</strong> sus e-mails, escribimos en la celda <strong>A1</strong> el 
+
+  nombre del amig@ del cual queremos buscar el e-mail. Escogemos en la celda 
+
+  E1 la función <span class="opciones">BUSCAR</span> y le pasamos como 
+
+parámetros: </p>
+
+<p>"valor_buscado= A1", "vector_de_comparación= B:B" y "vector_resultado
+ = C:C". Nos devuelve como resultado el e-mail perteneciente a la 
+persona buscada. </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_4_1_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+BUSCARH(valor_buscado; matriz_buscar_en; indicador_filas; ordenado)</span></p>
+
+<p>Busca en la primera fila de la tabla o matriz de valores 
+
+y devuelve el resultado en la misma columna desde una fila especificada.</p>
+
+<p>Ejemplo: Supongamos 
+
+  la misma situación anterior: una columna con nombres y otra con 
+
+  los e-mails; y queremos que nos diga quién está 2 puestos 
+
+  más abajo de un amig@ en la lista o el e-mail que está dos 
+
+filas más abajo del que buscamos. Seleccionamos la función <span class="opciones">BUSCARH</span> con los siguientes parámetros:</p>
+
+<p>"valor_buscado= A1", "Matriz_buscar_en= B:C" y "indicador_filas=2"  
+Nos devuelve como resultado el e-mail perteneciente a la persona situada
+ dos filas más abajo del buscado. </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_4_1_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+BUSCARV(valor_buscado; matriz_buscar_en; indicador_columnas; ordenado)</span></p>
+
+<p>Busca un valor en la primera columna de la izquierda 
+
+y devuelve el valor en la misma fila desde una columna especificada. </p>
+
+<p>Tiene el mismo efecto que la función anterior salvo que  esta función realiza la búsqueda por columnas.</p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_4_1_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+COINCIDIR(valor_buscado; matriz_buscar_en; tipo_de_coincidencia)</span></p>
+
+<p>Devuelve la posición relativa de un elemento, 
+
+  que coincide con un valor dado en un orden especificado dentro de una 
+
+matriz.</p>
+
+<p><span class="resaltado"><strong>Tipo_de_coincidencia</strong></span> es el número -1, 0 ó 1 y especifica cómo ha de coincidir 
+
+el valor_buscado con los valores de matriz_buscada.</p>
+
+<p>Si tipo_de_coincidencia es 1, COINCIDIR encuentra el mayor valor que 
+es inferior o igual al valor_buscado. Los valores en el argumento 
+matriz_buscada deben colocarse en orden ascendente: ...-2; -1; 0; 1; 
+2;...A-Z; FALSO; VERDADERO. </p>
+
+<p>Si tipo_de_coincidencia es 0, COINCIDIR encuentra el primer valor que
+ es exactamente igual al valor_buscado. Los valores en matriz_buscada 
+pueden estar en cualquier orden.</p>
+
+<p>Si tipo_de_coincidencia es -1, COINCIDIR encuentra el menor valor que
+ es mayor o igual al valor_buscado. Los valores de matriz_buscada deben 
+colocarse en orden descendente: VERDADERO; FALSO; Z-A; ...2; 1; 0; -1; 
+-2; ...y así sucesivamente.</p>
+
+<p>Si se omite tipo_de_coincidencia, se supondrá que es 1. </p>
+
+<p>Ejemplo: <span class="opciones">=COINCIDIR(23;{"uvas";,23\"peras";45\"manzanas";55}) </span>devuelve 2 que es la posición donde se encuentra el número 23. </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_4_1_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+  COLUMNA(ref)</span></p>
+
+<p>Devuelve el número de columna de una referencia. </p>
+
+<p>Ejemplo: <span class="opciones">=COLUMNA(D:H) </span>devuelve 4, pues la primera columna de 
+
+la matriz D:H es la D (la columna4).</p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_4_1_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+COLUMNAS(matriz)</span></p>
+
+<p>Devuelve el número de columnas que componen 
+
+la matriz. </p>
+
+<p>Ejemplo: <span class="opciones">=COLUMNAS(A:C) </span>devuelve 3, pues la matriz tiene 3 columnas.</p>
+<p>&nbsp;</p>
+
+
+
+
+<div id="pie">
+    
+    <p id="flechas" style="clear:both">
+		&nbsp;&nbsp;&nbsp;<a href=" t_6_4.htm#a1"><img src="a_6_4_1_files/flecha_arriba.gif" alt="Inicio" title="Inicio"></a>&nbsp;
+<a href=" a_6_4_2.htm"><img src="a_6_4_1_files/flecha_av.gif" alt="Adelante" title="Página siguiente"></a>
+        <br>
+    </p>
+    
+ 
+<iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="a_6_4_1_files/postmessageRelay.htm" id="oauth2relay1022569961" name="oauth2relay1022569961"></iframe></body></html>

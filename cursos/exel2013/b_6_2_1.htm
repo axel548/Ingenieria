@@ -1,0 +1,254 @@
+<!--?xml version="1.0" encoding="iso-8859-1"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>  5 - Básico: Referencias y Nombres</title>
+  <script async="" src="b_6_2_1_files/cbgapi.loaded_1"></script><script src="b_6_2_1_files/ca-pub-1875034419890743.js" type="text/javascript" async=""></script><script async="" src="b_6_2_1_files/cbgapi.loaded_0"></script><script type="text/javascript">
+		var previous = "t_6_2.htm#b1";
+		var home     = "t_6_2.htm#b1";
+		var next     = "b_6_2_2.htm";
+		
+	</script>
+   <script type="text/javascript" src="b_6_2_1_files/todo.js"></script><script src="b_6_2_1_files/navegacion.js" type="text/javascript"></script><link href="b_6_2_1_files/Menu.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="b_6_2_1_files/domMenu_min.js"></script>
+  <script type="text/javascript" src="b_6_2_1_files/domMenu_comun.js"></script>
+  <script type="text/javascript" src="b_6_2_1_files/domMenu_items.js"></script>
+
+  <link href="b_6_2_1_files/estilo_aulaclic.css" rel="stylesheet" type="text/css" title="aulaClic">
+  <meta name="description" content="Curso de Excel 2013 de aulaClic. Gratis">
+    <meta name="keywords" content="microsoft excel 2010 www celdas hojas calculo oficina ofimatica tablas graficos estilos  curso tutorial manual enseñanza educacion ">
+  
+  <!-- Añade esta etiqueta en la cabecera o delante de la etiqueta body. -->
+<script gapi_processed="true" type="text/javascript" src="b_6_2_1_files/plusone.js">
+  {lang: 'es'}
+</script>
+
+</head>
+
+<body data-twttr-rendered="true">
+<div style="height: 582px;" id="contenedor" class="basico">
+<div style="width: 1346px;" id="principal">
+<div style="width: 1181px;" id="texto_pagina">
+
+   <h1>Unidad 5. Básico: Referencias y Nombres (I)</h1>
+
+<br>
+  
+      <h2>Referencias</h2>
+      
+<p>Cuando trabajamos en Excel y, más concretamente, 
+
+  cuando hacemos usos de fórmulas y funciones casi es seguro que 
+
+  pongamos referencias a celdas o conjunto de celdas que no son propiamente 
+
+  la misma celda donde tenemos la fórmula. </p>
+
+<p>Las referencias son enlaces a un lugar, es decir, cuando en una 
+fórmula escribimos =SUMA(A1;B1) nos estamos refiriendo a que sume el <span class="resaltado">contenido</span> de <strong>A1</strong> y el <span class="resaltado">contenido</span> de <strong>B1.</strong></p>
+
+<p>Existen 3 tipos de referencias: </p>
+
+<p><img src="b_6_2_1_files/orangeball.gif" alt="" class="enlinea" height="14" width="14"> Referencia <span class="resaltado">Relativa</span>:
+ Las referencias de filas y columnas cambian si se copia la formula en 
+otra celda, es decir, se adapta a su entorno porque las referencias las 
+hace con respecto a la distancia entre la fórmula y las celdas que 
+forman parte de la fórmula. Esta es la opción que ofrece Excel por 
+defecto. </p>
+
+<p>Supongamos el ejemplo:</p>
+<table class="excel10">
+  <tbody><tr>
+    <td class="excel10enc">&nbsp;</td>
+    <td class="excel10enc">A</td>
+    <td class="excel10enc">B</td>
+  </tr>
+  <tr>
+    <td class="excel10enc">1</td>
+    <td>15 </td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td class="excel10enc">2</td>
+    <td> =A1+2 </td>
+    <td>30</td>
+  </tr>
+</tbody></table>
+<p> Si ahora copiamos la celda <span class="valores"> A2</span> en <span class="valores"> B3,</span> como la copiamos una columna hacia la 
+
+		  derecha y en una fila hacia abajo, la fórmula cambiará por: <span class="valores"> =B2+2</span> . 
+
+		  Lo que variará es la referencia a la celda <span class="valores"> A1</span> , 
+
+		  al copiarla una columna hacia la derecha se incrementará el nombre de 
+
+		  la columna en uno, es decir, en vez de <span class="valores"> A</span> pondrá <span class="valores"> B</span> y, al copiarla una fila hacia abajo, en vez 
+
+		  de fila <span class="valores"> 1</span> pondrá<span class="valores"> 2</span>, 
+
+		  resultando en <span class="valores">=B2+2</span> .</p>
+
+          <p>&nbsp;</p>
+
+          <p><img src="b_6_2_1_files/orangeball.gif" alt="" class="enlinea" height="14" width="14"> Referencia <span class="resaltado">Absoluta</span>:
+ Las referencias de filas y columnas no cambian si se copia la fórmula a
+ otra celda; las referencias a las celdas de la fórmula son fijas. </p>
+
+  <p>Supongamos el ejemplo: </p>
+  <table class="excel10">
+    <tbody><tr>
+      <td class="excel10enc">&nbsp;</td>
+      <td class="excel10enc">A</td>
+      <td class="excel10enc">B</td>
+    </tr>
+    <tr>
+      <td class="excel10enc">1</td>
+      <td>15 </td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td class="excel10enc">2</td>
+      <td> =$A$1+2 </td>
+      <td>30</td>
+    </tr>
+  </tbody></table>
+<p> Si ahora copiamos la celda <span class="valores"> A2</span> en <span class="valores"> B3</span>,
+ aunque la copiemos una columna hacia la derecha y en una fila hacia 
+abajo, como delante de la columna y delante de la fila encuentra el 
+signo<strong> $</strong> no variará la fórmula y en <span class="valores"> B3</span> pondrá <span class="valores"> =$A$1+2</span> .</p>
+
+        <p>&nbsp;</p>
+
+        <p><img src="b_6_2_1_files/orangeball.gif" alt="" class="enlinea" height="14" width="14"> Referencia <span class="resaltado">Mixta</span>:
+ Podemos hacer una combinación de ambas referencias, haciendo que las 
+filas sean relativas y las columnas absolutas o viceversa. </p>
+
+  <p>Supongamos el ejemplo: </p>
+  <table class="excel10">
+    <tbody><tr>
+      <td class="excel10enc">&nbsp;</td>
+      <td class="excel10enc">A</td>
+      <td class="excel10enc">B</td>
+    </tr>
+    <tr>
+      <td class="excel10enc">1</td>
+      <td>15 </td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td class="excel10enc">2</td>
+      <td> =$A1+2 </td>
+      <td>30</td>
+    </tr>
+  </tbody></table>
+  <p> Si ahora copiamos la celda <span class="valores"> A2</span> en <span class="valores"> B3</span>
+ , como hay un signo $ delante de la columna, aunque se copie una 
+columna más a la derecha ésta no variará, pero al no tener el signo $ 
+delante de la fila, al copiarla una fila hacia abajo la fila cambiará 
+por <span class="valores"> 2</span> en vez de <span class="valores"> 1</span> y el resultado será&nbsp; <span class="valores"> =$A2+2</span> .</p>
+<p>Supongamos el ejemplo: </p>
+<table class="excel10">
+  <tbody><tr>
+    <td class="excel10enc">&nbsp;</td>
+    <td class="excel10enc">A</td>
+    <td class="excel10enc">B</td>
+  </tr>
+  <tr>
+    <td class="excel10enc">1</td>
+    <td>15 </td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td class="excel10enc">2</td>
+    <td> =A$1+2 </td>
+    <td>30</td>
+  </tr>
+</tbody></table>
+<p> Si ahora copiamos la celda <span class="valores"> A2</span> en <span class="valores"> B3</span>
+ , como hay un signo $ delante de la fila, aunque se copie una fila 
+hacia abajo ésta no variará, pero al no tener el signo $ delante de la 
+columna, al copiarla una columna más a la derecha la columna cambiará 
+por <span class="valores"> B</span> en vez de <span class="valores"> A</span> y el resultado será <span class="valores"> =B$1+2</span> . </p>
+
+<h2>Cómo cambiar el tipo de referencia</h2>
+
+
+<p>Una opción para cambiar el tipo de referencia una vez sabemos 
+distinguir entre los diferentes tipos de referencias que existen y la 
+que más nos interesa en cada momento es hacerlo a mano. </p>
+
+<p>Las <span class="resaltado">referencias relativas</span> se escriben tal cual vemos la intersección de la celda con la columna y la fila (A2, B3, D1...).</p>
+
+<p>Para que la <span class="resaltado">referencia</span> sea<span class="resaltado"> absoluta</span>, es decir que sea fija, debemos anteponer a la columna y a la fila el signo $ ($A$2, $B$3, $D$1...).</p>
+
+<p>Para las referencias mixtas, como hemos dicho puede ser una mezcla 
+entre relativa y absoluta. Por tanto, pueden ser de este tipo ($A2, B$3,
+ $D1...).</p>
+
+<p>&nbsp;</p>
+
+<p>Otra opción, en lugar de escribirlo a mano, es hacerlo cuando estemos
+ editando la fórmula. En el momento en el que se incluyan las celdas 
+referenciadas, podemos pulsar sobre la tecla <strong>F4</strong> y vemos que va cambiando a los posibles tipos de referencias que podemos hacer con la celda. </p>
+<h2>Referencias a otras hojas o libros</h2>
+
+<p>Otra funcionalidad muy interesante de las referencias 
+
+  es la posibilidad de escribir referencias a celdas que se encuentran en 
+
+  otras hojas o incluso en otros libros.</p>
+
+<p><img src="b_6_2_1_files/orangeball.gif" alt="" class="enlinea" height="14" width="14"> Referencia a otras hojas. </p>
+
+<p>Para hacer referencia a celdas de otras hojas debemos 
+
+  indicar el nombre de la hoja seguido del signo de exclamación y 
+
+el nombre de la celda.</p>
+
+<p>Por ejemplo: <span class="resaltado">Hoja2!A2. </span>Esta referencia 
+
+está diciendo que coja la celda A2 de la hoja Hoja2.</p>
+
+<p>Si la hoja tuviera un nombre personalizado con espacios 
+
+  incluidos, la referencia sería de este modo 'Nombre de la hoja 
+
+  externa'!A2 ; habría que encerrar el nombre de la hoja entre comillas 
+
+simples ' '.</p>
+
+<p>&nbsp;</p>
+
+<p><img src="b_6_2_1_files/orangeball.gif" alt="" class="enlinea" height="14" width="14"> Referencia a otros libros.</p>
+
+<p>Para hacer referencia a celdas de otros libros debemos 
+
+  indicar el nombre del libro entre corchetes y el resto como acabamos de 
+
+ver.</p>
+
+<p>Por ejemplo: '[presupuesto 2013]Hoja1'!B2 esta referencia indica que 
+la celda se encuentra en el libro "Presupuesto 2013", en la Hoja1 y en 
+la celda B2.</p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado">Muy importante: </span>Al escribir una cadena de caracteres que incluya espacios debemos 
+
+  ponerlo siempre entre comillas simples ' '. </p>
+  
+  
+
+
+
+<div id="pie">
+    
+    <p id="flechas" style="clear:both">
+		&nbsp;&nbsp;&nbsp;<a href=" t_6_2.htm#b1"><img src="b_6_2_1_files/flecha_arriba.gif" alt="Inicio" title="Inicio"></a>&nbsp;
+<a href=" b_6_2_2.htm"><img src="b_6_2_1_files/flecha_av.gif" alt="Adelante" title="Página siguiente"></a>
+        <br>
+    </p>
+    
+
+<iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="b_6_2_1_files/postmessageRelay.htm" id="oauth2relay1628227847" name="oauth2relay1628227847"></iframe></body></html>

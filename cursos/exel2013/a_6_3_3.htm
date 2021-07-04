@@ -1,0 +1,157 @@
+<!--?xml version="1.0" encoding="iso-8859-1"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>  5 - Avanzado: Funciones de texto</title>
+  <script async="" src="a_6_3_3_files/cbgapi.loaded_1"></script><script src="a_6_3_3_files/ca-pub-1875034419890743.js" type="text/javascript" async=""></script><script async="" src="a_6_3_3_files/cbgapi.loaded_0"></script><script type="text/javascript">
+		var previous = "t_6_3.htm#a3";
+		var home     = "t_6_3.htm#a3";
+		var next     = "a_6_3_4.htm";
+		
+	</script>
+   <script type="text/javascript" src="a_6_3_3_files/todo.js"></script><script src="a_6_3_3_files/navegacion.js" type="text/javascript"></script><link href="a_6_3_3_files/Menu.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="a_6_3_3_files/domMenu_min.js"></script>
+  <script type="text/javascript" src="a_6_3_3_files/domMenu_comun.js"></script>
+  <script type="text/javascript" src="a_6_3_3_files/domMenu_items.js"></script>
+
+  <link href="a_6_3_3_files/estilo_aulaclic.css" rel="stylesheet" type="text/css" title="aulaClic">
+  <meta name="description" content="Curso de Excel 2013 de aulaClic. Gratis">
+    <meta name="keywords" content="microsoft excel 2010 www celdas hojas calculo oficina ofimatica tablas graficos estilos  curso tutorial manual enseñanza educacion ">
+  
+  <!-- Añade esta etiqueta en la cabecera o delante de la etiqueta body. -->
+<script gapi_processed="true" type="text/javascript" src="a_6_3_3_files/plusone.js">
+  {lang: 'es'}
+</script>
+
+</head>
+
+<body data-twttr-rendered="true">
+
+
+<div style="height: 582px;" id="contenedor" class="avanzado">
+<div style="width: 1346px;" id="principal">
+<div style="width: 1181px;" id="texto_pagina">
+
+   <h1>Unidad 5. Avanzado: Funciones de texto (I)</h1>
+
+<br>
+ 
+
+<p><span class="resaltado"><img src="a_6_3_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  CARACTER(número)</span></p>
+
+<p>Devuelve el carácter específicado por 
+
+  el número de código correspondiente al código de 
+
+caracteres ASCII.</p>
+
+<p> Ejemplo:<span class="opciones"> =CARACTER(76) </span>devuelve L </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_3_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+CODIGO(texto)</span></p>
+
+<p>Esta función devuelve el código ASCII 
+
+del primer carácter del texto pasado como parámetro.</p>
+
+<p> Ejemplo:<span class="opciones"> =CODIGO("L") </span>devuelve 76 </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_3_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+CONCATENAR(texto1; texto2; ...; textoN)</span></p>
+
+<p>Devuelve una cadena de caracteres con la unión 
+
+  de los textos pasados como parámetros. Esta función es de 
+
+  utilidad cuando tenemos texto como puede ser el nombre completo de una 
+
+  persona pero  dividido en distintas celdas y, en alguna ocasión, 
+
+queremos fundir el nombre completo en una sola celda. </p>
+
+<p> Ejemplo:<span class="opciones"> =CONCATENAR("Antonio ";"Gutierrez ";"Fernandez " ) </span>devuelve Antonio Gutierrez Fernandez </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_3_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+DECIMAL(número; decimales; no_separar_millares)</span></p>
+
+<p>Redondea un número pasado como parámetro 
+
+  a los decimales indicados y devuelve el resultado en formato de texto. 
+
+  La última opción es una parámetro lógico (VERDADERO, 
+
+  FALSO). Si se omite, coge como valor FALSO, mostrando los puntos 
+
+separadores de los millares. </p>
+
+<p> Ejemplo:<span class="opciones"> =DECIMAL(4005,75;3) </span>devuelve 4.005,750 y <span class="opciones">=DECIMAL(4005,75;3;verdadero) </span>devuelve 4005,750 </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_3_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+DERECHA(texto; núm_de_caracteres)</span></p>
+
+<p>Devuelve, de la cadena de texto, el número de 
+
+caracteres especificados comenzando a contar desde el final del texto.</p>
+
+<p> Ejemplo:<span class="opciones"> =DERECHA("Bienaventurados los que estudien Excel...";12) </span>devuelve "ien Excel..." </p>
+
+<p>&nbsp;</p>
+
+<p><span class="resaltado"><img src="a_6_3_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+
+  ENCONTRAR(texto_buscado; dentro_del_texto; núm_inicial)</span></p>
+
+<p>Devuelve la posición inicial del texto buscado 
+
+  dentro de otro texto empezando a buscar desde la posición núm_inicial. 
+
+  A diferencia de la función HALLAR, ENCONTRAR distingue entre mayúsculas 
+
+y minúsculas y no admite caracteres comodín.</p>
+
+<p> Ejemplo:<span class="opciones"> =ENCONTRAR("Wally";"Siempre buscando nuevas aventuras este 
+
+Wally y siempre perdido, ayúdame a encontrarlo";1) </span></p>
+
+<p>devuelve 40, que es la posición donde empieza 
+
+la palabra Wally. </p>
+
+<p>&nbsp;</p>
+<p><span class="resaltado"><img src="a_6_3_3_files/redball.gif" alt="" class="enlinea" height="14" width="14"> Función 
+  
+  EXTRAE(texto; posicion_inicial; núm_caracteres)</span></p>
+
+<p>Devuelve los caracteres indicados de una cadena de 
+
+texto a partir de una posición inicial. </p>
+
+<p> Ejemplo:<span class="opciones"> =EXTRAE("Mirando el mar, me envuelve una emoción intensa...";12;3) </span>devuelve "mar" </p>
+
+
+
+
+<div id="pie">
+    
+    <p id="flechas" style="clear:both">
+		&nbsp;&nbsp;&nbsp;<a href=" t_6_3.htm#a3"><img src="a_6_3_3_files/flecha_arriba.gif" alt="Inicio" title="Inicio"></a>&nbsp;
+<a href=" a_6_3_4.htm"><img src="a_6_3_3_files/flecha_av.gif" alt="Adelante" title="Página siguiente"></a>
+        <br>
+    </p>
+    
+ 
+<iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="a_6_3_3_files/postmessageRelay.htm" id="oauth2relay900318641" name="oauth2relay900318641"></iframe></body></html>

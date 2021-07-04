@@ -1,0 +1,204 @@
+<!--?xml version="1.0" encoding="iso-8859-1"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>  6 - Avanzado: Definir formatos numéricos personalizados</title>
+  <script async="" src="a_7_4_3_files/cbgapi.loaded_1"></script><script src="a_7_4_3_files/ca-pub-1875034419890743.js" type="text/javascript" async=""></script><script async="" src="a_7_4_3_files/cbgapi.loaded_0"></script><script type="text/javascript">
+		var previous = "t_7_4.htm#a3";
+		var home     = "t_7_4.htm#a3";
+		var next     = "t_7_4.htm#a3";
+		
+	</script>
+   <script type="text/javascript" src="a_7_4_3_files/todo.js"></script><script src="a_7_4_3_files/navegacion.js" type="text/javascript"></script><link href="a_7_4_3_files/Menu.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="a_7_4_3_files/domMenu_min.js"></script>
+  <script type="text/javascript" src="a_7_4_3_files/domMenu_comun.js"></script>
+  <script type="text/javascript" src="a_7_4_3_files/domMenu_items.js"></script>
+
+  <link href="a_7_4_3_files/estilo_aulaclic.css" rel="stylesheet" type="text/css" title="aulaClic">
+  <meta name="description" content="Curso de Excel 2013 de aulaClic. Gratis">
+    <meta name="keywords" content="microsoft excel 2010 www celdas hojas calculo oficina ofimatica tablas graficos estilos  curso tutorial manual enseñanza educacion ">
+  
+  <!-- Añade esta etiqueta en la cabecera o delante de la etiqueta body. -->
+<script gapi_processed="true" type="text/javascript" src="a_7_4_3_files/plusone.js">
+  {lang: 'es'}
+</script>
+
+</head>
+
+<body data-twttr-rendered="true">
+
+<div style="height: 582px;" id="contenedor" class="avanzado">
+<div style="width: 1346px;" id="principal">
+<div style="width: 1181px;" id="texto_pagina">
+
+   <h1>Unidad 6. Avanzado: Definir formatos numéricos personalizados</h1>
+
+<br>
+
+
+<p>Excel provee una gran cantidad de formatos numéricos, 
+  
+  pero es posible que en algún momento necesitemos algún formato 
+  
+  que no esté disponible en los estándares de Excel.</p>
+<p>Para cubrir esta necesidad Excel dispone de una herramienta 
+  
+  para <span class="resaltado">crear formatos personalizados</span>.</p>
+<p>Por defecto todas las celdas de Excel tienen el formato 
+  
+  de número general. Su funcionamiento se basa en que lo que escribimos 
+  
+  es lo que tenemos, es decir se adapta a lo que hayamos escrito, ya sea 
+  
+  texto, números con decimales, porcentajes, etc.</p>
+<img src="a_7_4_3_files/formato_personalizado_2013.gif" alt="formato personalizado" class="derecha" height="472" width="575">
+<p>Para 
+  
+  crear un nuevo formato debemos acceder al cuadro de diálogo <span class="ventanas">Formato 
+    
+    de celdas</span>, seleccionar la <span class="opciones">Categoría: 
+      
+      Personalizada</span> y seguidamente en el cuadro 
+  
+  de texto <span class="opciones">Tipo:</span> debemos escribir el código del formato que deseamos crear. </p>
+<p>Para crear un formato de número personalizado, 
+  
+  primero debemos conocer las reglas de los códigos para crear un 
+  
+  formato.</p>
+<p>El formato se compone de cuatro secciones separadas 
+  
+  por ; (punto y coma).</p>
+<p><span class="valores">____________ ;____________ ; ____________ ; ____________</span></p>
+<p>La primera sección define el formato que tendra 
+  
+  el número en la celda si es positivo; la segunda, si el número 
+  
+  es negativo, la tercera, si el número vale cero; la cuarta si la 
+  
+  celda contiene texto.</p>
+<p><span class="opciones">0</span> : Reserva un dígito 
+  
+  para un número, si no se completa el tamaño definido por 
+  
+  el formato se completa con ceros.</p>
+<p><span class="opciones">#</span> : Reserva un dígito 
+  
+  para un número, pero si no se completa el tamaño definido 
+  
+  por el formato se deja en blanco. </p>
+<p><span class="opciones">?</span> : Reserva un dígito. 
+  
+  Añade espacios en ceros insignificantes.</p>
+<p><span class="opciones">.</span> : Punto decimal.</p>
+<p><span class="opciones">%</span> : Símbolo porcentual.</p>
+<p><span class="opciones">,</span> : Separador de millares. </p>
+<p><span class="opciones">E- E+ e- e+</span> : Notación 
+  
+  científica. </p>
+<p><span class="opciones">$ - + / ( ) :</span> : Muestra estos 
+  
+  caracteres. No necesitan comillas. </p>
+<p><span class="opciones">\</span> : Muestra el siguiente 
+  
+  carácter en el formato. </p>
+<p><span class="opciones">*</span> : Repite el siguiente carácter 
+  
+  hasta completar el ancho de la celda.</p>
+<p><span class="opciones">_</span> : Deja un espacio </p>
+<p><span class="opciones">"texto"</span> : Muestra 
+  
+  el texto escrito entre la comillas dobles. </p>
+<p><span class="opciones">@</span> : Espacio reservado para 
+  
+  texto. </p>
+<p><span class="opciones">[color]</span> : Muestra el caracter 
+  
+  en el color especificado. Puede ser Negro, Azul, Cian, Verde, Magenta, 
+  
+  Verde, Rojo y Amarillo. </p>
+<p><span class="opciones">[color n]</span> : Muestra el correspondiente 
+  
+  color de la paleta de colores, n puede ser un número entre 0 y 
+  
+  56. </p>
+<p><span class="opciones">[valor condicion]</span> : Permite 
+  
+  escoger tu propio criterio para cada sección de un formato 
+  
+  numérico.</p>
+<p><span class="opciones">m</span> : Muestra el mes como número 
+  
+  sin ceros (1-12).</p>
+<p><span class="opciones">mm</span> : Muestra el mes como 
+  
+  número con ceros (01-12).</p>
+<p><span class="opciones">mmm</span> : Muestra el nombre del 
+  
+  mes como abreviación (Ene, Feb).</p>
+<p><span class="opciones">mmmm</span> : Muestra el nombre 
+  
+  del mes por completo (Enero, Febrero).</p>
+<p><span class="opciones">mmmmm</span> : Muestra la inicial 
+  
+  del mes (E, F).</p>
+<p><span class="opciones">d</span> : Muestra el día 
+  
+  como número sin ceros (1-31).</p>
+<p><span class="opciones">dd</span> : Muestra el día 
+  
+  como número con ceros (01-31).</p>
+<p><span class="opciones">ddd</span> : Muestra el nombre del 
+  
+  día como abreviación (Lun, Mar).</p>
+<p><span class="opciones">dddd</span> : Muestra el nombre 
+  
+  del día por completo (Lunes, Martes).</p>
+<p><span class="opciones">yy o yyyy</span> : Muestra el año 
+  
+  en dos dígitos (00-99) o cuatro (1900-9999).</p>
+<p><span class="opciones">h o hh</span> : Muestra la hora 
+  
+  como números sin ceros (0-23) o como números con ceros (00-23).</p>
+<p><span class="opciones">m o mm</span> : Muestra los minutos 
+  
+  como números sin ceros (0-59) o como números con ceros (00-59).</p>
+<p><span class="opciones">s o ss</span> : Muestra los segundos 
+  
+  como números sin ceros (0-59) o como números con ceros (00-59).</p>
+<p><span class="opciones">AM/PM</span> : Muestra la hora en 
+  
+  formato de 12 horas. Si no se indica esta opción, se muestra la 
+  
+  hora en formato 24 horas. </p>
+<p>Por ejemplo, puedes utilizar el siguiente formato personalizado:</p>
+<p><span class="valores">€#,##[Verde];(0,00€)[Rojo];"Cero";""</span></p>
+<p>Este formato contiene cuatro secciones separadas por 
+  
+  el signo de punto y coma y utiliza un formato diferente para cada sección. </p>
+<p>Con este formato estamos indicando que los números 
+  
+  positivos (1ª sección) se escriben en verde, llevan el signo 
+  
+  del euro delante, no se muestran los ceros no significativos y solo se 
+  
+  muestran 2 decimales (#.##); los números negativos se escriben 
+  
+  en rojo, entre paréntesis con el € detrás y con dos 
+  
+  decimales siempre; los valores cero se sustituyen por la palabra <span class="valores">cero</span> y los textos por la cadena nula, es decir que si en la celda hay texto, 
+  
+  ese texto desaparecerá.</p>
+
+
+
+
+<div id="pie">
+    
+    <p id="flechas" style="clear:both">
+		&nbsp;&nbsp;&nbsp;<a href=" t_7_4.htm#a3"><img src="a_7_4_3_files/flecha_arriba.gif" alt="Inicio" title="Inicio"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>
+    </p>
+    
+
+<iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="a_7_4_3_files/postmessageRelay.htm" id="oauth2relay289484702" name="oauth2relay289484702"></iframe></body></html>

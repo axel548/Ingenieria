@@ -1,0 +1,4 @@
+[autorun]
+open=iniciar.bat
+icon=sae.ico
+Label=Pruebas Especificas de computacion

@@ -1,0 +1,176 @@
+<!--?xml version="1.0" encoding="iso-8859-1"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>  5 - Las funciones</title>
+  <script async="" src="t_6_1_files/cbgapi.loaded_1"></script><script src="t_6_1_files/ca-pub-1875034419890743.js" type="text/javascript" async=""></script><script async="" src="t_6_1_files/cbgapi.loaded_0"></script><script type="text/javascript">
+		var previous = "t_5_3.htm";
+		var home     = "index.htm";
+		var next     = "t_6_2.htm";
+		
+	</script>
+   <script type="text/javascript" src="t_6_1_files/todo.js"></script><script src="t_6_1_files/navegacion.js" type="text/javascript"></script><link href="t_6_1_files/Menu.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="t_6_1_files/domMenu_min.js"></script>
+  <script type="text/javascript" src="t_6_1_files/domMenu_comun.js"></script>
+  <script type="text/javascript" src="t_6_1_files/domMenu_items.js"></script>
+
+  <link href="t_6_1_files/estilo_aulaclic.css" rel="stylesheet" type="text/css" title="aulaClic">
+  <meta name="description" content="Curso de Excel 2013 de aulaClic. Gratis">
+    <meta name="keywords" content="microsoft excel 2010 www celdas hojas calculo oficina ofimatica tablas graficos estilos  curso tutorial manual enseñanza educacion ">
+  
+  <!-- Añade esta etiqueta en la cabecera o delante de la etiqueta body. -->
+<script gapi_processed="true" type="text/javascript" src="t_6_1_files/plusone.js">
+  {lang: 'es'}
+</script>
+
+</head>
+
+<body data-twttr-rendered="true">
+
+<div style="height: 582px;" id="contenedor">
+<div style="width: 1346px;" id="principal">
+<div style="width: 1181px;" id="texto_pagina">
+
+   <h1>Unidad 5. Las funciones (I)</h1>
+
+<br>
+		
+
+      
+
+<p>Esta unidad es <span class="resaltado">una de las 
+
+  más importantes del curso</span>, pues en su comprensión 
+
+  y manejo está la base de Excel. Qué es una hoja de cálculo 
+
+  sino una base de datos que utilizamos con una serie de fórmulas 
+
+  para evitar tener que recalcular por cada cambio que hacemos. Por eso, 
+
+  esta unidad es fundamental para el desarrollo del curso y la buena utilización 
+
+  de Excel. </p>
+
+<p>Vamos a <span class="resaltado"> profundizar</span> en el <span class="resaltado"> manejo de funciones</span> ya definidas por Excel 2013 para agilizar la creación de hojas de cálculo, <span class="resaltado"> estudiando la sintaxis</span> de éstas así como el <span class="resaltado"> uso del asistente para funciones</span>, herramienta muy útil cuando no conocemos muy bien las funciones 
+
+existentes o la sintaxis de las mismas.</p>
+<h2 id="ap_06_01">5.1.  Introducir funciones </h2>
+<p>Una <span class="resaltado">función es una 
+  
+  fórmula </span>predefinida por Excel  (o por el usuario) <span class="resaltado">que 
+    
+    opera con uno o más valores y devuelve un resultado</span> que aparecerá 
+  
+  directamente en la celda o será utilizado para calcular la fórmula 
+  
+  que la contiene.</p>
+
+<p>La <span class="resaltado"> sintaxis</span> de cualquier función es: </p>
+
+<blockquote>
+
+  <p><span class="resaltado">nombre_función(argumento1;argumento2;...;argumentoN)</span> </p>
+
+</blockquote>
+
+<p> Siguen las siguientes reglas: </p>
+
+<blockquote>
+
+  <p>- Si la función va al comienzo de una fórmula debe empezar por el signo =. </p>
+
+  <p>- Los argumentos o valores de 
+
+    entrada van siempre entre paréntesis. No dejes espacios antes o después
+
+    de cada paréntesis. </p>
+
+  <p>- Los argumentos pueden ser valores constantes (número o texto), fórmulas
+
+    o funciones. </p>
+
+  <p>- Los argumentos deben de separarse por 
+
+    un punto y coma <strong>;</strong>. </p>
+
+</blockquote>
+
+<p>Ejemplo: <span class="valores">=SUMA(A1:C8) </span></p>
+
+<p> Tenemos la función SUMA() que 
+
+  devuelve como resultado la suma de sus argumentos. El operador "<strong>:</strong>" 
+
+  nos <span class="resaltado">identifica un rango de celdas</span>. Así <strong>A1:C8</strong> indica todas las celdas incluidas entre la 
+
+  celda A1 y la C8. De esta manera, la función anterior sería equivalente a: </p>
+
+<blockquote>
+
+  <p><span class="valores">=A1+A2+A3+A4+A5+A6+A7+A8+B1+B2+B3+B4+B5+B6+B7+B8+C1+C2+C3+C4+C5+C6+C7+C8</span> </p>
+
+</blockquote>
+
+<p>En este ejemplo, se puede apreciar la ventaja de utilizar la función. </p>
+
+<p>Las fórmulas pueden contener más de una 
+
+función, y pueden aparecer funciones anidadas dentro de la fórmula. </p>
+
+<blockquote>
+
+  <p>Ejemplo: <span class="valores">=SUMA(A1:B4)/SUMA(C1:D4) </span></p>
+
+</blockquote>
+
+<p>Existen muchos tipos de funciones dependiendo 
+
+  del tipo de operación o cálculo que realizan. Así, hay funciones 
+matemáticas, trigonométricas, estadísticas, financieras, de texto, de 
+fecha y hora, 
+
+lógicas, de base de datos, de búsqueda y referencia y de información. </p>
+
+<p>Para introducir una fórmula debe 
+
+  escribirse en una celda cualquiera tal cual introducimos cualquier texto, <span class="resaltado">precedida</span> siempre del <span class="resaltado">signo 
+
+=</span>. </p>
+
+<p>Si quieres conocer más sobre los <span class="resaltado">operadores más utilizados</span> y las <span class="resaltado">precedencias de los operadores</span> visita nuestro básico <a href=" b_6_1_1.htm" id="b1"><img name="image19" src="t_6_1_files/ico_menos.gif" alt="" class="enlinea" height="20" width="26"></a>.</p>
+
+<h2 id="ap_06_02">5.2. Autosuma y funciones más frecuentes</h2>
+<p>Una función, como cualquier dato, <span class="resaltado"> se puede escribir directamente en la celda</span> si conocemos su sintaxis, 
+
+  pero Excel <span class="resaltado"> dispone</span> de herramientas que facilitan esta tarea. </p>
+<p>En la pestaña <span class="ventanas">Inicio</span> o en la de <span class="ventanas">Fórmulas</span> encontrarás el botón de <span class="opciones"> <strong>Autosuma</strong></span> <img src="t_6_1_files/autosuma1_excel_2013.gif" alt="boton autosuma" class="enlinea" height="23" width="95"> que nos permite <span class="resaltado">realizar la función SUMA de forma 
+  
+  más rápida</span>. <img src="t_6_1_files/autosuma2_excel_2013.gif" alt="autosuma desplegado" class="derecha" height="173" width="144"></p>
+<p>Con este botón tenemos acceso 
+  
+  también a otras funciones utilizando la flecha de la derecha del botón. Al 
+  
+  hacer clic sobre ésta aparecerá la lista desplegable de la imagen. Y podremos utilizar otra función que no
+  
+  sea la <span class="opciones">Suma</span>, como puede ser <span class="opciones">Promedio</span> (calcula la media aritmética), <span class="opciones">Cuenta</span> (cuenta valores), <span class="opciones">Máx</span> (obtiene el valor máximo) o <span class="opciones">Mín</span> (obtiene 
+  
+  el valor mínimo). Ademas de poder accesar al diálogo de funciones a través de <span class="opciones">Más Funciones...</span>. </p>
+<p>Para utilizar estas opciones, asegúrate de que tienes seleccionada la
+ celda en que quieres que se realice la operación antes de pulsar el 
+botón.</p>
+
+
+
+
+<div id="pie">
+    <span class="pagina">Pág. 6.1</span>
+    <p id="flechas" style="clear:both">
+		<a href=" t_4_6.htm"><img src="t_6_1_files/flecha_re.gif" alt="Atrás" title="Página anterior"></a>&nbsp;
+<a href=" index.htm"><img src="t_6_1_files/flecha_home.gif" alt="Inicio" title="Inicio"></a>&nbsp;
+<a href=" t_6_2.htm"><img src="t_6_1_files/flecha_av.gif" alt="Adelante" title="Página siguiente"></a>
+        <br>
+    </p>
+    
+
+<iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="t_6_1_files/postmessageRelay.htm" id="oauth2relay411033822" name="oauth2relay411033822"></iframe></body></html>
